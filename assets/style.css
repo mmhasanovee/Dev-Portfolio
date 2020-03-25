@@ -1,13 +1,17 @@
 /* DEEP: #05386B MEDIUM: #379683 LIGHT: #5CDB95 */
+html,
 body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
   margin: 0;
-  overflow-x: hidden; /*disable horizontal scrolling*/
 }
 
 /* variable declarations */
 
 :root {
-  --rotation1:180;
+  --rotation1: 180;
 }
 
 .totopbtn {
@@ -33,7 +37,7 @@ body {
 nav {
   padding: 2%;
   background-color: #05386b;
-  overflow: hidden;
+  overflow-x: hidden;
   /* check hidden tag */
   position: fixed;
   width: 100%;
@@ -84,7 +88,6 @@ li {
   padding: 1%;
   background: #379683;
   color: #fff;
-  font-size: 2.9em;
   letter-spacing: 5px;
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
@@ -96,7 +99,6 @@ li {
   color: #fff;
   padding: 1%;
   background: #8ee4af;
-  font-size: 1.8em;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   letter-spacing: 3px;
@@ -231,12 +233,13 @@ hr {
 }
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
+  padding: 20%;
   text-align: center;
 }
 
 .grid-item-layout {
   font-family: "Montserrat", sans-serif;
+  font-size: 50%;
   color: #586069;
   box-shadow: 0 10px 30px -15px rgba(48, 44, 44, 0.7);
   padding: 8%;
@@ -508,7 +511,6 @@ portfolio__item__hover__description {
 .portfolio__item__hover__title {
   margin: 1.5em 0 0;
   color: #fff;
-  font-size: 2.4em;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
@@ -658,3 +660,83 @@ footer {
   letter-spacing: 2px;
 }
 /* DEEP: #05386B MEDIUM: #379683 LIGHT: #5CDB95 */
+
+/*-------------------------------- responsiveness ------------------------------------------------*/
+
+/* header title */
+
+@media screen and (min-width: 1200px) {
+  .header-sub {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .header-sub {
+    font-size: 10px;
+  }
+}
+
+/* header title */
+@media screen and (min-width: 1200px) {
+  .header-title {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .header-title {
+    font-size: 20px;
+  }
+}
+
+/* nav text */
+
+@media screen and (max-width: 1199px) {
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    font-size: 9px;
+  }
+}
+
+/* header */
+@media screen and (max-width: 1100px) {
+  .header {
+    height: 50vh;
+  }
+}
+
+/* portfolio */
+
+/* on hover title */
+
+@media screen and (max-width: 1199px) {
+  .portfolio__item__hover__title {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .portfolio__item__hover__title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .portfolio__item__hover__sub {
+    font-size: 5px;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .portfolio__item__hover__sub {
+    font-size: 20px;
+  }
+}
