@@ -239,7 +239,6 @@ hr {
 
 .grid-item-layout {
   font-family: "Montserrat", sans-serif;
-  font-size: 50%;
   color: #586069;
   box-shadow: 0 10px 30px -15px rgba(48, 44, 44, 0.7);
   padding: 8%;
@@ -442,7 +441,6 @@ a {
 .portfolio__item__info {
   margin: 0.2em 0 0.5em;
   color: #fff;
-  font-size: 1.4em;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   text-align: center;
@@ -505,9 +503,6 @@ a {
   height: 65%;
 }
 
-portfolio__item__hover__description {
-  color: #fff;
-}
 .portfolio__item__hover__title {
   margin: 1.5em 0 0;
   color: #fff;
@@ -570,7 +565,6 @@ portfolio__item__hover__description {
 }
 .ac-info {
   text-align: center;
-  font-size: 120%;
   padding: 2%;
 }
 
@@ -663,30 +657,30 @@ footer {
 
 /*-------------------------------- responsiveness ------------------------------------------------*/
 
-/* header title */
+/* header sub */
 
-@media screen and (min-width: 1200px) {
+
+@media screen and (max-width: 1109px) {
+  .header-sub {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 1110px) {
   .header-sub {
     font-size: 30px;
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .header-sub {
-    font-size: 10px;
-  }
-}
-
 /* header title */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1110px) {
   .header-title {
     font-size: 50px;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1109px) {
   .header-title {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 
@@ -715,11 +709,11 @@ footer {
 
 /* portfolio */
 
-/* on hover title */
+/* on hover title+sub */
 
 @media screen and (max-width: 1199px) {
   .portfolio__item__hover__title {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
@@ -729,14 +723,92 @@ footer {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 500px) {
   .portfolio__item__hover__sub {
-    font-size: 5px;
+    font-size: 8px;
+    font-family: "Montserrat", sans-serif;
   }
 }
 
-@media screen and (min-width: 1380px) {
+@media screen and (min-width: 501px) {
   .portfolio__item__hover__sub {
+    font-size: 10px;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+@media screen and (min-width: 1001px) {
+  .portfolio__item__hover__sub {
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+@media screen and (min-width: 1540px) {
+  .portfolio__item__hover__sub {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+/* portfolio__item__info */
+
+@media screen and (max-width: 850px) {
+  .portfolio__item__info {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 851px) {
+  .portfolio__item__info {
+    font-size: 20px;
+  }
+}
+
+/* portfolio remove border on phone */
+
+
+
+@media screen and (max-width: 850px) {
+  .portfolio__item__hover:before{
+    border-top-width: 0px;
+    border-left-width: 0px;
+  }
+  .portfolio__item__hover::after{
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+  }
+}
+
+
+
+
+/* achievements */
+@media screen and (max-width: 850px) {
+  .ac-info {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 851px) {
+  .ac-info{
+    font-size: 20px;
+  }
+}
+
+
+/* greeting part, skills sections */
+
+@media screen and (max-width: 850px) {
+  .grid-item-layout {
+    font-size: 9px;
+  }
+}
+@media screen and (min-width:851px) {
+  .grid-item-layout{
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width:1051px) {
+  .grid-item-layout{
     font-size: 20px;
   }
 }
