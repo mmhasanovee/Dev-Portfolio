@@ -647,18 +647,17 @@ a {
 footer {
   clear: both;
   text-align: center;
-  padding: 1%;
+  padding: 10px;
   background-color: #05386b;
   color: #fdfdfd;
   width: 100%;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 /* DEEP: #05386B MEDIUM: #379683 LIGHT: #5CDB95 */
 
 /*-------------------------------- responsiveness ------------------------------------------------*/
 
 /* header sub */
-
 
 @media screen and (max-width: 1109px) {
   .header-sub {
@@ -711,8 +710,9 @@ footer {
 
 /* on hover title+sub */
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 800px) {
   .portfolio__item__hover__title {
+    margin: 0 0 0;
     font-size: 12px;
   }
 }
@@ -765,21 +765,16 @@ footer {
 
 /* portfolio remove border on phone */
 
-
-
-@media screen and (max-width: 850px) {
-  .portfolio__item__hover:before{
+@media screen and (max-width: 900px) {
+  .portfolio__item__hover:before {
     border-top-width: 0px;
     border-left-width: 0px;
   }
-  .portfolio__item__hover::after{
+  .portfolio__item__hover::after {
     border-bottom-width: 0px;
     border-right-width: 0px;
   }
 }
-
-
-
 
 /* achievements */
 @media screen and (max-width: 850px) {
@@ -788,27 +783,28 @@ footer {
   }
 }
 @media screen and (min-width: 851px) {
-  .ac-info{
+  .ac-info {
     font-size: 20px;
   }
 }
 
-
 /* greeting part, skills sections */
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 849px) {
   .grid-item-layout {
-    font-size: 9px;
+    font-size: 7px;
   }
 }
-@media screen and (min-width:851px) {
-  .grid-item-layout{
+
+
+@media screen and (min-width: 851px) {
+  .grid-item-layout {
     font-size: 12px;
   }
 }
 
-@media screen and (min-width:1051px) {
-  .grid-item-layout{
+@media screen and (min-width: 1051px) {
+  .grid-item-layout {
     font-size: 20px;
   }
 }
